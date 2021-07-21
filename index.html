@@ -1,0 +1,15 @@
+from abc import ABC, abstractmethod
+class Chess(ABC):
+    @abstractmethod
+    def draw(self):
+        pass
+
+
+
+class Queen(Chess):
+    def draw(self):
+        super().draw()
+        print("Queen move")
+
+k=Queen()
+k.draw()
